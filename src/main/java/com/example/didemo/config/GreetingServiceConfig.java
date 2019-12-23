@@ -14,7 +14,6 @@ public class GreetingServiceConfig {
 
     // Spring will pick up that GreetingRepository and inject it at runtime into this configuration method
     // so this is going to return a new instance of the GreetingServiceFactory and it will use the GreetingRepository to declare it
-
     @Bean
     GreetingServiceFactory greetingServiceFactory(GreetingRepository greetingRepository) {
         return new GreetingServiceFactory(greetingRepository);

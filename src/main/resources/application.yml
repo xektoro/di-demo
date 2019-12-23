@@ -1,0 +1,15 @@
+guru:
+  jms:
+    username: JMS Username
+    password: JMS Password
+    url: JMS Url
+
+# file separator for YAML
+---
+# set an active profile
+spring:
+  profile: es
+# override property
+guru:
+  jms:
+    username: JMS username in Spanish (overriden)

@@ -1,0 +1,45 @@
+# YAML is often used to describe data structures and we can do that this way:
+
+#single property
+name: Dimitar
+
+# array of properties (YAML) is very sensitive about spacing (here we have 2 spaces)
+names:
+  - Uliana
+  - Yavor
+  - Leo
+  - Tsveti
+  - Aleto
+
+# here we have escaped comment sign
+pound_sign: "#"
+
+book:
+  author: Joe Black
+  publisher: random publisher
+
+
+# boolean values
+truth: yes
+another_truth: True
+more_truth: true
+lie: no
+lie2: No
+lie3: false
+lie4: FALSE
+
+# This is string (escaped)
+string_val: "This is it's quote"
+colon_string: "my courses: one two three"
+
+# it will read everything, also the new lines
+include_new_lines: |
+  wqeqwrqwr
+  eqwe qweqweqw
+  qweqweqwe qweqweqweq
+
+# now the new lines will be ignored and we will have one long string, contatining all that characters
+ignore_new_lines: >
+  eqweqweqw
+  eqweqweq oepqw
+  eqweqweq asdasd
